@@ -8,7 +8,7 @@ public class CalculatorTest {
         double multiply;
         double divide;
         double subtract;
-        
+
         // SUM
         // test scenario 1:
         sum = calculator.sum(3, 7);
@@ -42,6 +42,22 @@ public class CalculatorTest {
         // test scenario 4:
         subtract = calculator.subtract(3, -1);
         System.out.println(subtract);
-        
+
+        // MULTIPLY
+        // test scenario 1:
+        multiply = calculator.multiply(3, 7);
+        System.out.println(multiply);
+
+        // test scenario 2:
+        multiply = calculator.multiply(3, 0);
+        System.out.println(multiply);
+
+        // test scenario 3:
+        multiply = calculator.multiply(0, 0);
+        System.out.println(multiply);
+
+        // test scenario 4:
+        multiply = calculator.multiply(3, -1);
+        System.out.println(multiply);
     }
 }
