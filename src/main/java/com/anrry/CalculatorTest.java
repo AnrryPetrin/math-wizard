@@ -25,5 +25,23 @@ public class CalculatorTest {
         // test scenario 4:
         sum = calculator.sum(3, -1);
         System.out.println(sum);
+
+        // SUBTRACT
+        // test scenario 1:
+        subtract = calculator.subtract(3, 7);
+        System.out.println(subtract);
+
+        // test scenario 2:
+        subtract = calculator.subtract(3, 0);
+        System.out.println(subtract);
+
+        // test scenario 3:
+        subtract = calculator.subtract(0, 0);
+        System.out.println(subtract);
+
+        // test scenario 4:
+        subtract = calculator.subtract(3, -1);
+        System.out.println(subtract);
+        
     }
 }
