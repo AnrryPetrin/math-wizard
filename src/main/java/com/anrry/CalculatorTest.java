@@ -59,5 +59,22 @@ public class CalculatorTest {
         // test scenario 4:
         multiply = calculator.multiply(3, -1);
         System.out.println(multiply);
+
+        // DIVIDE
+        // test scenario 1:
+        divide = calculator.divide(3, 7);
+        System.out.println(divide);
+
+        // test scenario 2:
+        divide = calculator.divide(3, 0);
+        System.out.println(divide);
+
+        // test scenario 3:
+        divide = calculator.divide(0, 0);
+        System.out.println(divide);
+
+        // test scenario 4:
+        divide = calculator.divide(3, -1);
+        System.out.println(divide);
     }
 }
