@@ -9,4 +9,23 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class CalculatorTest {
 
+    @Test
+    @DisplayName("1 + 1 = 2")
+    void sumTwoNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(2, calculator.sum(1, 1), "1 + 1 should equal 2");
+    }
+
+    @ParameterizedTest(name = "{0} + {1} = {2}")
+    @CsvSource({
+            "3, 7, 10",
+            "3, 0, 3",
+            "0, 0, 0",
+            "3, -1, 2"
+    })
+    void sum(double first, double second, double expectedResult) {
+        Calculator calculator = new Calculator();
+        assertEquals(expectedResult, calculator.sum(first, second),
+                () -> first + " + " + second + " should equal " + expectedResult);
+    }
 }
