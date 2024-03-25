@@ -28,4 +28,24 @@ public class CalculatorTest {
         assertEquals(expectedResult, calculator.sum(first, second),
                 () -> first + " + " + second + " should equal " + expectedResult);
     }
+
+    @Test
+    @DisplayName("1 - 1 = 0")
+    void subtractTwoNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(0, calculator.subtract(1, 1), "1 - 1 should equal 0");
+    }
+
+    @ParameterizedTest(name = "{0} + {1} = {2}")
+    @CsvSource({
+            "3, 7, -4",
+            "3, 0, 3",
+            "0, 0, 0",
+            "3, -1, 4"
+    })
+    void subtract(double first, double second, double expectedResult) {
+        Calculator calculator = new Calculator();
+        assertEquals(expectedResult, calculator.subtract(first, second),
+                () -> first + " - " + second + " should equal " + expectedResult);
+    }
 }
