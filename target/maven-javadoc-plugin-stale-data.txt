@@ -1,0 +1,47 @@
+@options
+@packages
+--class-path
+'D:/math-wizard/target/classes;D:/math-wizard/target/test-classes;C:/Users/anrry/.m2/repository/org/junit/jupiter/junit-jupiter/5.10.2/junit-jupiter-5.10.2.jar;C:/Users/anrry/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.10.2/junit-jupiter-api-5.10.2.jar;C:/Users/anrry/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar;C:/Users/anrry/.m2/repository/org/junit/platform/junit-platform-commons/1.10.2/junit-platform-commons-1.10.2.jar;C:/Users/anrry/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar;C:/Users/anrry/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.10.2/junit-jupiter-params-5.10.2.jar;C:/Users/anrry/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.10.2/junit-jupiter-engine-5.10.2.jar;C:/Users/anrry/.m2/repository/org/junit/platform/junit-platform-engine/1.10.2/junit-platform-engine-1.10.2.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'17'
+-sourcepath
+'D:/math-wizard/src/test/java'
+-author
+-bottom
+'Copyright &#169; 2024. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'D:/math-wizard/target/site/testapidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'math-wizard 1.0-SNAPSHOT Test API'
+-use
+-version
+-windowtitle
+'math-wizard 1.0-SNAPSHOT Test API'
+com.anrry
+D:\math-wizard\src\test\java = 1711329461133
+D:\math-wizard\target\site\testapidocs\allclasses-index.html = 1711375682070
+D:\math-wizard\target\site\testapidocs\allpackages-index.html = 1711375682074
+D:\math-wizard\target\site\testapidocs\copy.svg = 1711375682100
+D:\math-wizard\target\site\testapidocs\element-list = 1711375682018
+D:\math-wizard\target\site\testapidocs\help-doc.html = 1711375682094
+D:\math-wizard\target\site\testapidocs\index-all.html = 1711375682085
+D:\math-wizard\target\site\testapidocs\index.html = 1711375682089
+D:\math-wizard\target\site\testapidocs\link.svg = 1711375682100
+D:\math-wizard\target\site\testapidocs\member-search-index.js = 1711375682078
+D:\math-wizard\target\site\testapidocs\module-search-index.js = 1711375682076
+D:\math-wizard\target\site\testapidocs\overview-tree.html = 1711375682059
+D:\math-wizard\target\site\testapidocs\package-search-index.js = 1711375682076
+D:\math-wizard\target\site\testapidocs\script.js = 1711375682099
+D:\math-wizard\target\site\testapidocs\search-page.js = 1711375682104
+D:\math-wizard\target\site\testapidocs\search.html = 1711375682088
+D:\math-wizard\target\site\testapidocs\search.js = 1711375682102
+D:\math-wizard\target\site\testapidocs\stylesheet.css = 1711375682097
+D:\math-wizard\target\site\testapidocs\tag-search-index.js = 1711375682079
+D:\math-wizard\target\site\testapidocs\type-search-index.js = 1711375682077
