@@ -1,13 +1,15 @@
-package com.anrry;
-
 /*
  * A simple calculator with the four functions:
  * addition, subtraction, multiplication, and division.
  *
  * @author Anrry Petrin De Araujo
- * @version 1.5
+ * 
+ * @version 1.0
+ * 
  * @since 1.0
  */
+
+package com.anrry;
 
 public class Calculator {
 
@@ -19,8 +21,6 @@ public class Calculator {
      * @param b The second number to be added.
      * 
      * @return The sum of a and b.
-     * 
-     * @since 1.1
      */
     public double sum(double a, double b) {
         return a + b;
@@ -34,8 +34,6 @@ public class Calculator {
      * @param b The second number to be subtracted.
      * 
      * @return The subtract of a and b.
-     * 
-     * @since 1.2
      */
     public double subtract(double a, double b) {
         return a - b;
@@ -49,8 +47,6 @@ public class Calculator {
      * @param b The second number to be multiplied.
      * 
      * @return The multiply of a and b.
-     * 
-     * @since 1.3
      */
     public double multiply(double a, double b) {
         return a * b;
@@ -66,10 +62,6 @@ public class Calculator {
      * @return The divide of a and b.
      * 
      * @throws ArithmeticException if b is zero.
-     * 
-     * @version 1.5
-     * 
-     * @since 1.4
      */
     public double divide(double a, double b) {
         if (b == 0) {
