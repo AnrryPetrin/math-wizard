@@ -37,7 +37,7 @@ public class CalculatorTest {
         assertEquals(0, calculator.subtract(1, 1), "1 - 1 should equal 0");
     }
 
-    @ParameterizedTest(name = "{0} + {1} = {2}")
+    @ParameterizedTest(name = "{0} - {1} = {2}")
     @CsvSource({
             "3, 7, -4",
             "3, 0, 3",
