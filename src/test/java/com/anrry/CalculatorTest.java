@@ -1,3 +1,14 @@
+/*
+ * Tests the Calculator class, a simple calculator with basic operations:
+ * addition, subtraction, multiplication, and division.
+ *
+ * @author Anrry Petrin De Araujo
+ * 
+ * @version 1.0
+ * 
+ * @since 1.0
+ */
+
 package com.anrry;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -10,6 +21,10 @@ import org.junit.jupiter.params.provider.CsvSource;
 
 public class CalculatorTest {
 
+    /*
+     * Tests the sum(double, double) method of the Calculator class.
+     * Verifies if the addition of two numbers is correct.
+     */
     @Test
     @DisplayName("1 + 1 = 2")
     void sumTwoNumbers() {
@@ -17,6 +32,11 @@ public class CalculatorTest {
         assertEquals(2, calculator.sum(1, 1), "1 + 1 should equal 2");
     }
 
+    /*
+     * Tests the sum(double, double) method of the Calculator class with various
+     * cases.
+     * Verifies if the addition of two numbers is correct for different inputs.
+     */
     @ParameterizedTest(name = "{0} + {1} = {2}")
     @CsvSource({
             "3, 7, 10",
@@ -30,6 +50,10 @@ public class CalculatorTest {
                 () -> first + " + " + second + " should equal " + expectedResult);
     }
 
+    /*
+     * Tests the subtract(double, double) method of the Calculator class.
+     * Verifies if the subtraction of two numbers is correct.
+     */
     @Test
     @DisplayName("1 - 1 = 0")
     void subtractTwoNumbers() {
@@ -37,6 +61,11 @@ public class CalculatorTest {
         assertEquals(0, calculator.subtract(1, 1), "1 - 1 should equal 0");
     }
 
+    /*
+     * Tests the subtract(double, double) method of the Calculator class with
+     * various cases.
+     * Verifies if the subtraction of two numbers is correct for different inputs.
+     */
     @ParameterizedTest(name = "{0} - {1} = {2}")
     @CsvSource({
             "3, 7, -4",
@@ -50,6 +79,10 @@ public class CalculatorTest {
                 () -> first + " - " + second + " should equal " + expectedResult);
     }
 
+    /*
+     * Tests the divide(double, double) method of the Calculator class.
+     * Verifies if the division of two numbers is correct.
+     */
     @Test
     @DisplayName("1 / 1 = 1")
     void divideTwoNumbers() {
@@ -57,6 +90,11 @@ public class CalculatorTest {
         assertEquals(1, calculator.divide(1, 1), "1 / 1 should equal 1");
     }
 
+    /*
+     * Tests the divide(double, double) method of the Calculator class with various
+     * cases.
+     * Verifies if the division of two numbers is correct for different inputs.
+     */
     @ParameterizedTest(name = "{0} / {1} = {2}")
     @CsvSource({
             "3, 7, 0.42857142857142855",
@@ -77,6 +115,10 @@ public class CalculatorTest {
         }
     }
 
+    /*
+     * Tests the multiply(double, double) method of the Calculator class.
+     * Verifies if the multiplication of two numbers is correct.
+     */
     @Test
     @DisplayName("1 * 1 = 1")
     void multiplyTwoNumbers() {
@@ -84,6 +126,12 @@ public class CalculatorTest {
         assertEquals(1, calculator.multiply(1, 1), "1 * 1 should equal 1");
     }
 
+    /*
+     * Tests the multiply(double, double) method of the Calculator class with
+     * various cases.
+     * Verifies if the multiplication of two numbers is correct for different
+     * inputs.
+     */
     @ParameterizedTest(name = "{0} * {1} = {2}")
     @CsvSource({
             "3, 7, 21",
