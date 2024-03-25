@@ -76,4 +76,24 @@ public class CalculatorTest {
                     () -> first + " / " + second + " should equal " + expectedResult);
         }
     }
+
+    @Test
+    @DisplayName("1 * 1 = 1")
+    void multiplyTwoNumbers() {
+        Calculator calculator = new Calculator();
+        assertEquals(1, calculator.multiply(1, 1), "1 * 1 should equal 1");
+    }
+
+    @ParameterizedTest(name = "{0} * {1} = {2}")
+    @CsvSource({
+            "3, 7, 21",
+            "3, 0, 0",
+            "0, 0, 0",
+            "3, -1, -3"
+    })
+    void multiply(double first, double second, double expectedResult) {
+        Calculator calculator = new Calculator();
+        assertEquals(expectedResult, calculator.multiply(first, second),
+                () -> first + " * " + second + " should equal " + expectedResult);
+    }
 }
