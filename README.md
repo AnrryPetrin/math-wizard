@@ -22,17 +22,24 @@ math-wizard
 │   README.md
 │   pom.xml   
 └───src
-    └───main
-    │   └───java
-    │       └───com
-    │           └───anrry
-    │               │   Calculator.java
-    └───test
-        └───java
-            └───com
-                └───anrry
-                    │   CalculatorTest.java
+|   └───main
+|   │   └───java
+|   │       └───com
+|   │           └───anrry
+|   │               │   Calculator.java
+|   └───test
+|       └───java
+|           └───com
+|               └───anrry
+|                   │   CalculatorTest.java
+└───target
+    |   ...
+    └───site
+        |   index.html
+        |   ...
 ```
+## Javadoc
+The Javadoc for this project has been generated to provide comprehensive documentation for the codebase. It can be found in the `target\site` directory. Open the `index.html` file in a web browser to explore the documentation.
 
 ## Features
 
