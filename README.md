@@ -18,7 +18,9 @@ The project follows the structure of a Maven project:
 ```
 math-wizard
 │   README.md
-│   pom.xml   
+│   pom.xml
+└───.vscode
+|    └───settings.json   
 └───src
     └───main
     │   └───java
