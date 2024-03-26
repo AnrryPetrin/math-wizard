@@ -17,7 +17,6 @@ The project follows the structure of a Maven project:
 
 ```
 math-wizard
-|   .gitignore 
 │   README.md
 │   pom.xml   
 └───src
